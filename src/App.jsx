@@ -8,6 +8,7 @@ import Card from './components/layout/Card';
 import Familia from './components/Familia';
 import FamiliaMembro from './components/FamiliaMembro';
 import ListaAlunos from './components/repeticao/ListaAlunos';
+import ListaProdutos from './components/repeticao/ListaProdutos';
 
 function App() {
   return (
@@ -15,8 +16,12 @@ function App() {
       <div className="App-content">
           Mini Projetos
           <div className="cards">
+          <Card titulo="Repetição" color="#4ea8de">
+              <ListaProdutos>
+              </ListaProdutos>
+            </Card>
             <Card titulo="Repetição" color="#161a1d">
-              <ListaAlunos sobrenome="Ribeiro">
+              <ListaAlunos>
               </ListaAlunos>
             </Card>
             <Card titulo="Membros da família" color="#7400b8">
