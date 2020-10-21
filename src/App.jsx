@@ -11,6 +11,8 @@ import ListaAlunos from "./components/repeticao/ListaAlunos";
 import ListaProdutos from "./components/repeticao/ListaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 
 function App() {
   return (
@@ -18,12 +20,18 @@ function App() {
       <div className="App-content">
         Mini Projetos
         <div className="cards">
-          <Card titulo="Renderização condicional ternário" color="#4ea8de">
+          <Card titulo="Comunicação indireta" color="#c44536">
+            <IndiretaPai></IndiretaPai>
+          </Card>
+          <Card titulo="Comunicação direta" color="#5f0f40">
+            <DiretaPai usuario={{ nome: 'Mário'}}></DiretaPai>
+          </Card>
+          <Card titulo="Renderização condicional ternário" color="#f72585">
             <UsuarioInfo usuario={{ nome: 'Mário'}}></UsuarioInfo>
             <UsuarioInfo usuario={{ nome: ''}}></UsuarioInfo>
             <UsuarioInfo usuario={{ nome: 'Ana'}}></UsuarioInfo>
           </Card>
-          <Card titulo="Renderização condicional ternário" color="#4ea8de">
+          <Card titulo="Renderização condicional ternário" color="#90be6d">
             <ParOuImpar numero={20}></ParOuImpar>
             <ParOuImpar numero={31}></ParOuImpar>
             <ParOuImpar numero={78}></ParOuImpar>
