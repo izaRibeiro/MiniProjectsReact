@@ -1,17 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import IndiretaFilho from './IndiretaFilho';
 
 export default (props) => {
-    let nome = "?";
-    let idade = 0;
-    let bool = false;
+    const [nome, setNome] = useState('?');
+    const [idade, setIdade] = useState(0);
+    const [bool, setBool] = useState(false);
 
     function fornecerInformacoes(nome, idade, bool) {
-        nome = nome;
-        idade = idade;
-        bool = bool;
-        
-        console.log(nome, idade, bool)
+        setNome(nome);
+        setIdade(idade);
+        setBool(bool);
     }
     return (
         <div>
