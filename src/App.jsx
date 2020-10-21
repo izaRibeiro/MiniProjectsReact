@@ -14,6 +14,7 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
       <div className="App-content">
         Mini Projetos
         <div className="cards">
-          <Card titulo="Componente controlado" color="#c44536">
+          <Card titulo="Contador" color="#fdc500">
+            <Contador></Contador>
+          </Card>
+          <Card titulo="Componente controlado" color="#8ac926">
             <Input></Input>
           </Card>
           <Card titulo="Comunicação indireta" color="#c44536">
